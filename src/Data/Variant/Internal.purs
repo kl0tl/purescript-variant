@@ -77,6 +77,8 @@ foreign import data VariantCase ∷ Type
 
 foreign import data VariantFCase ∷ Type → Type
 
+type role VariantFCase representational
+
 class VariantTags (rl ∷ RL.RowList) where
   variantTags ∷ RLProxy rl → L.List String
 
