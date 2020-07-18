@@ -38,6 +38,8 @@ import Unsafe.Coerce (unsafeCoerce)
 
 foreign import data Variant ∷ Row Type → Type
 
+type role Variant representational
+
 -- | Inject into the variant at a given label.
 -- | ```purescript
 -- | intAtFoo :: forall r. Variant (foo :: Int | r)
