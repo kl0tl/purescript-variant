@@ -49,6 +49,8 @@ data UnknownF a
 
 data VariantF (f ∷ # Type) a
 
+type role VariantF representational representational
+
 instance functorVariantF ∷ Functor (VariantF r) where
   map f a =
     case coerceY a of
